@@ -36,12 +36,13 @@ namespace Só_pra_zoar
             this.BtnSim = new System.Windows.Forms.Button();
             this.Mensagem = new System.Windows.Forms.Label();
             this.cont = new System.Windows.Forms.Label();
+            this.Alternativas = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Titulo
             // 
             this.Titulo.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Titulo.Location = new System.Drawing.Point(220, 9);
+            this.Titulo.Location = new System.Drawing.Point(220, -2);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(448, 44);
             this.Titulo.TabIndex = 0;
@@ -59,7 +60,7 @@ namespace Só_pra_zoar
             // Perguntas
             // 
             this.Perguntas.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Perguntas.Location = new System.Drawing.Point(281, 154);
+            this.Perguntas.Location = new System.Drawing.Point(274, 65);
             this.Perguntas.Name = "Perguntas";
             this.Perguntas.Size = new System.Drawing.Size(330, 82);
             this.Perguntas.TabIndex = 2;
@@ -106,11 +107,25 @@ namespace Só_pra_zoar
             this.cont.Text = "label1";
             this.cont.Visible = false;
             // 
+            // Alternativas
+            // 
+            this.Alternativas.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Alternativas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Alternativas.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Alternativas.FormattingEnabled = true;
+            this.Alternativas.ItemHeight = 20;
+            this.Alternativas.Location = new System.Drawing.Point(258, 141);
+            this.Alternativas.Name = "Alternativas";
+            this.Alternativas.Size = new System.Drawing.Size(346, 100);
+            this.Alternativas.TabIndex = 7;
+            this.Alternativas.SelectedIndexChanged += new System.EventHandler(this.Alternativas_SelectedIndexChanged);
+            // 
             // PrimeiraTela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 457);
+            this.Controls.Add(this.Alternativas);
             this.Controls.Add(this.cont);
             this.Controls.Add(this.Mensagem);
             this.Controls.Add(this.BtnSim);
@@ -137,6 +152,7 @@ namespace Só_pra_zoar
         private System.Windows.Forms.Label Mensagem;
         private System.Windows.Forms.Label cont;
         private System.Windows.Forms.TextBox RespostaTxt;
+        private System.Windows.Forms.ListBox Alternativas;
     }
 }
 

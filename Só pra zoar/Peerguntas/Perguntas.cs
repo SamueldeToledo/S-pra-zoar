@@ -13,7 +13,7 @@ namespace Só_pra_zoar.Peerguntas
 
         public bool PrimeiraPergunta(string resposta)
         {
-            if (resposta.Replace(" ", "").ToUpper() != "4A6LITROS")
+            if (resposta.Replace(" ", "").ToUpper() != "4A6LITROS" && resposta.Replace("(" ,"").Replace(")","").ToUpper() != "B" && resposta != "b) Tem entre 4 a 6 litros. São retirados 450 mililitros")
             {
                 Mensagem = "Errou";
 
@@ -32,7 +32,7 @@ namespace Só_pra_zoar.Peerguntas
         {
 
 
-            if (resposta.Replace(" ", "").ToUpper() != "DESCARTES")
+            if (resposta.Replace(" ", "").ToUpper() != "DESCARTES" && resposta.Replace("(", "").Replace(")", "").ToUpper() != "C" && resposta != "c) Descartes")
             {
                 Mensagem = "Errou";
 
@@ -48,7 +48,7 @@ namespace Só_pra_zoar.Peerguntas
         {
 
 
-            if (resposta.Replace(" ", "").ToUpper() != "BRASIL")
+            if (resposta.Replace(" ", "").ToUpper() != "BRASIL" && resposta.Replace("(", "").Replace(")", "").ToUpper() != "C" && resposta == "3. De onde é a invenção do chuveiro elétrico?")
             {
                 Mensagem = "Errou";
 
@@ -65,7 +65,7 @@ namespace Só_pra_zoar.Peerguntas
         {
 
 
-            if (resposta.Replace(" ", "").ToUpper() != "VATICANOERUSSIA")
+            if (resposta.Replace(" ", "").ToUpper() != "VATICANOERUSSIA" && resposta.Replace("(", "").Replace(")", "").ToUpper() != "A" && resposta == "4.Quais o menor e o maior país do mundo ? ")
             {
                 Mensagem = "Errou";
 
@@ -82,7 +82,7 @@ namespace Só_pra_zoar.Peerguntas
         {
 
 
-            if (resposta.Replace(" ", "").ToUpper() != "JOAOGOULART")
+            if (resposta.Replace(" ", "").ToUpper() != "JOAOGOULART" && resposta.Replace("(", "").Replace(")", "").ToUpper() != "E" && resposta == "5. Qual o nome do presidente do Brasil que ficou conhecido como Jango?")
             {
                 Mensagem = "Errou";
 
